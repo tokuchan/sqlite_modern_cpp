@@ -1,6 +1,5 @@
 language: cpp
 sudo: false
-compiler: g++-5
 
 addons:
   apt:
@@ -11,3 +10,5 @@ addons:
     - cmake
     - gcc-5
     - libsqlite3-dev
+
+compiler: g++-5
