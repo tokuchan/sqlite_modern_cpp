@@ -1,16 +1,15 @@
 language: cpp
 sudo: false
 
-env: GCC_VERSION=5 CPP=14
-addons: &gcc5
+addons:
   apt:
     sources:
       - george-edison55-precise-backports
       - ubuntu-toolchain-r-test
     packages:
       - cmake
-      - gcc-5
+      - gcc-4.9
       - libsqlite3-dev
 
 before_install:
-  - export CXX="g++-5" CC="gcc-5"
+  - export CXX="g++-4.9" CC="gcc-4.9"
